@@ -3,6 +3,7 @@ spring:
     import:
       -optional:configserver:http://config-server:8888/consul-client.yml
       -optional:configserver:http://config-server:8888/gateway-actuator.yml
+      -optional:configserver:http://config-server:8888/logging.yml
 server:
     port: 8080
 spring:
