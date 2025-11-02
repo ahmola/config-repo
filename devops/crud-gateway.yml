@@ -1,7 +1,6 @@
 spring:
   config:
     import:
-      -optional:configserver:http://config-server:8888/sql.yml
       -optional:configserver:http://config-server:8888/consul-client.yml
       -optional:configserver:http://config-server:8888/gateway-actuator.yml
 server:
