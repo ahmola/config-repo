@@ -1,0 +1,11 @@
+logging:
+  pattern:
+    console: >
+      {"time":"%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ}",
+      "level":"%p",
+      "service":"${spring.application.name}",
+      "thread":"%t",
+      "logger":"%c",
+      "msg":"%m",
+      "trace":"%X{traceId:-}",
+      "span":"%X{spanId:-}"}%n
