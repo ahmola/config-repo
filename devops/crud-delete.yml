@@ -4,6 +4,7 @@ spring:
       -optional:configserver:http://config-server:8888/sql.yml
       -optional:configserver:http://config-server:8888/consul-client.yml
       -optional:configserver:http://config-server:8888/service-actuator.yml
+      -optional:configserver:http://config-server:8888/logging.yml
 server:
   port: 8088
 spring:
