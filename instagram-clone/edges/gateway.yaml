@@ -1,9 +1,9 @@
 spring:
   config:
     import:
-      -optional:configserver:http://config-server:8888/consul-client
-      -optional:configserver:http://config-server:8888/gateway-actuator
-      -optional:configserver:http://config-server:8888/logging
+      - optional:configserver:http://config-server:8888/consul-client
+      - optional:configserver:http://config-server:8888/gateway-actuator
+      - optional:configserver:http://config-server:8888/logging
 
 server:
   port: 8080
