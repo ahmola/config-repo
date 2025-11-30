@@ -5,7 +5,7 @@ spring:
     name: post-service
   config:
     import:
-      -optional:configserver:http://config-server:8888/consul-client.yaml
-      -optional:configserver:http://config-server:8888/logging.yaml
-      -optional:configserver:http://config-server:8888/service-actuator.yaml
-      -optional:configserver:http://config-server:8888/mysql.yaml
+      - optional:configserver:http://config-server:8888/consul-client
+      - optional:configserver:http://config-server:8888/logging
+      - optional:configserver:http://config-server:8888/service-actuator
+      - optional:configserver:http://config-server:8888/mysql
