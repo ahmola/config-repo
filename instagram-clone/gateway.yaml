@@ -3,9 +3,9 @@ server:
 spring:
   config:
     import:
-      -optional:configserver:http://config-server:8888/consul-client.yml
-      -optional:configserver:http://config-server:8888/gateway-actuator.yml
-      -optional:configserver:http://config-server:8888/logging.yml
+      -optional:configserver:http://config-server:8888/consul-client.yaml
+      -optional:configserver:http://config-server:8888/gateway-actuator.yaml
+      -optional:configserver:http://config-server:8888/logging.yaml
 spring:
     application:
         name: gateway
