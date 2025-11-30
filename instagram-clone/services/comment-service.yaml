@@ -1,0 +1,9 @@
+server:
+  port: 8083
+spring:
+  config:
+    import:
+      -optional:configserver:http://config-server:8888/consul-client.yaml
+      -optional:configserver:http://config-server:8888/logging.yaml
+      -optional:configserver:http://config-server:8888/service-actuator.yaml
+      -optional:configserver:http://config-server:8888/mysql.yaml
