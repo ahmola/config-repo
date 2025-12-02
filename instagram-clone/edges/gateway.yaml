@@ -1,12 +1,9 @@
-server:
-  port: 8080
-
 spring:
   config:
     import:
-      - configserver:http://config-server:8888/common/consul-client.yaml
-      - configserver:http://config-server:8888/common/gateway-actuator.yaml
-      - configserver:http://config-server:8888/common/logging.yaml
+      - optional:configserver:http://config-server:8888/common/consul-client.yaml
+      - optional:configserver:http://config-server:8888/common/gateway-actuator.yaml
+      - optioanl:configserver:http://config-server:8888/common/logging.yaml
 
   application:
     name: gateway
@@ -24,3 +21,6 @@ spring:
               locator:
                 enabled: true
                 lower-case-service-id: true
+
+server:
+  port: 8080
