@@ -1,0 +1,13 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: post-service
+  
+  config:
+    import:
+      - optional:configserver:http://config-server:8888/consul-client
+      - optional:configserver:http://config-server:8888/logging
+      - optional:configserver:http://config-server:8888/service-actuator
+      - optional:configserver:http://config-server:8888/mysql
