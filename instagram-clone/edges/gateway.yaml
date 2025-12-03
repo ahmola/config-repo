@@ -4,9 +4,9 @@ spring:
   
   config:
     import:
-      -optional:configserver:http://config-server:8888/consul-client
-      -optional:configserver:http://config-server:8888/gateway-actuator
-      -optioanl:configserver:http://config-server:8888/logging
+      -optional:configserver:http://config-server:8888/consul-client.yaml
+      -optional:configserver:http://config-server:8888/gateway-actuator.yaml
+      -optioanl:configserver:http://config-server:8888/logging.yaml
 
   autoconfigure:
       exclude:
