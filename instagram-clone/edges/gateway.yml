@@ -6,15 +6,15 @@ spring:
     name: gateway
 
   autoconfigure:
-      exclude:
-      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
-      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+    exclude:
+    - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+    - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
 
   cloud:
     gateway:
       server:
-          webflux:
-            discovery:
-              locator:
-                enabled: true
-                lower-case-service-id: true
+        webflux:
+          discovery:
+            locator:
+              enabled: true
+              lower-case-service-id: true

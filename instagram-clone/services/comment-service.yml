@@ -4,10 +4,6 @@ server:
 spring:
   application:
     name: comment-service
-
   config:
     import:
-      - optional:configserver:http://config-server:8888/consul-client
-      - optional:configserver:http://config-server:8888/logging
-      - optional:configserver:http://config-server:8888/service-actuator
-      - optional:configserver:http://config-server:8888/mysql
+      -optional:configserver:http://config-server:8888/dbms/mysql.yml
