@@ -7,9 +7,9 @@ spring:
   
   config:
     import:
-      -optional:configserver:http://config-server:8888/consul-client.yml
-      -optional:configserver:http://config-server:8888/actuator.yml
-      -optional:configserver:http://config-server:8888/logging.yml
+      - optional:configserver:http://config-server:8888/consul-client
+      - optional:configserver:http://config-server:8888/actuator
+      - optional:configserver:http://config-server:8888/logging
 
   autoconfigure:
       exclude:
