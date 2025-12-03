@@ -11,16 +11,6 @@ spring:
       - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
 
   cloud:
-  #   consul:
-  #     host: consul
-  #     port: 8500
-  #     discovery:
-  #       enabled: true
-  #       register: true
-  #       service-name: ${spring.application.name}
-  #       prefer-ip-address: true
-  #       health-check-path: /actuator/health
-  #       health-check-interval: 10s
     gateway:
       server:
           webflux:
@@ -28,4 +18,3 @@ spring:
               locator:
                 enabled: true
                 lower-case-service-id: true
-
