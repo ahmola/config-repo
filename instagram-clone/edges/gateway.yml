@@ -4,12 +4,6 @@ server:
 spring:
   application:
     name: gateway
-  
-  config:
-    import:
-      -optional:configserver:http://config-server:8888/consul-client.yml
-      -optional:configserver:http://config-server:8888/actuator.yml
-      -optional:configserver:http://config-server:8888/logging.yml
 
   autoconfigure:
       exclude:
