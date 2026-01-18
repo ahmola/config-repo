@@ -6,7 +6,7 @@ spring:
     name: user-service
 
     datasource:
-        // VPN
+        # VPN
         url: jdbc:mysql://100.104.142.32:3306/user
         username: root
         password: 1234
